@@ -18,3 +18,15 @@ Before start using Ruby on Rails, MySQL should run first. Follow the commands be
 #### generate controller
  - rails generate controller <controller_name> <list_of_views_to_create>   
  - rails generate controller Demo index
+
+#### ActiveRecord commands  
+- rails db:schema:dump  
+- rails generate migration <MigrationName> #generate migration  
+- rails generate model <ModelName>  
+- rails db:migrate    # run migration  
+- rails db:migrate:status   # status of the migration  
+- rails db:migrate VERSION=0   # migrate to initial state  
+- rails db:migrate VERSION=20211024104753   # migrate to specific version (check table schema_migrations)   
+- rails generate model User first_name:string last_name:string email:string # generate model  
+- rails generate model Page subject_id:integer name:string permalink:string position:integer visible:boolean context:text  
+- rails generate model Subject name:string position:integer visible:boolean  
