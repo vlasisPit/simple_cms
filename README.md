@@ -89,3 +89,8 @@ Before start using Ruby on Rails, MySQL should run first. Follow the commands be
 - second_page = Page.new(:name=>'Second page', :visible => true, :position => 2)
 - second_page.save  # cannot save it, because foreign key is not optional
 - subject.pages << second_page
+
+#### CRUD  
+- rails generate controller Pages index index show new edit delete  
+- rails generate controller Subjects index index show new edit delete  
+- 
