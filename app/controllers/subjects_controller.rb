@@ -46,8 +46,6 @@ class SubjectsController < ApplicationController
     else
       render('edit')
     end
-
-
   end
 
   def delete
